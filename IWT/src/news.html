@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Shopping cart</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="/src/js/mySctipt.js">
+        var date = new Date();
+        var n = date.getDate()+"/"+(date.getMonth() +1)+"/"+date.getFullYear();
+        document.write(n);
+    </script>
+</head>
+<body>
+    <img src="/src/images/PngItem_203005.png" alt= "Shopping cart logo" width = "200px" height="200px" class="logo">
+    <div class="header">
+        <h2>Shopping Cart</h2>
+        <h3>Online Shoppig Store</h3>
+    </div>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="/src/index.html"> Home</a></li>
+            <li><a href="/src/news.html">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="buttons">
+    <button onclick="loadData('product1')">Iphone XS</button>
+    <button onclick="loadData('product2')">Iphone XS Max</button>
+    <button onclick="loadData('product3')">Iphone 8S Plus</button>
+    <button onclick="loadData('product4')">Iphone SE</button>
+    <button onclick="priceForLoop()">Average Price</button>
+    <button onclick="priceHigher()">Prices Higher Than 1000</button>
+    <button onclick="priceLower()">Prices Lower Than 800</button>
+    </div>
+    <div>
+        <img src="" alt="" id="image">
+        <p id="text"></p>
+        <p id="text1"></p>
+    </div>
+    
+    <hr>
+    <footer>
+        <p><small>Created By: Pramod Lakmal</small></p>
+        <p><small><a href="http://courseweb.sliit.lk/">Visit to our course</a></small></p>
+    </footer>
+</body>
+</html>

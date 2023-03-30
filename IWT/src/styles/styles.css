@@ -1,0 +1,118 @@
+body {
+    background-image: url(/src/images/alexander-grey-NkQD-RHhbvY-unsplash.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header h2, h3 {
+    font-family: sans-serif;
+    text-align: center;
+}
+.header h2 {
+    font-size: 28px;
+}
+.header h3 {
+    font-size: 18px;
+}
+hr {
+    border: 1px solid black;
+}
+nav {
+    background-color: black;
+    list-style-type: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    display: inline-block; 
+    padding: 5px 5px;
+    margin: 5px;
+    width: 70px;
+    text-align: center;
+}
+nav li a{
+    text-decoration: none;
+    color:white;
+    padding: 0 10px;
+    position: relative;
+}
+nav li a::after {
+    content: "";
+    position: absolute;
+    color: #7c5295;
+    background-color: #7c5295;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+nav li a:hover:after {
+    width: 100%;
+}
+.productData table {
+    width: 75%;
+    background-color: #e0b0ff;
+    border: 1px groove darkblue;
+    padding: 3px;
+    border-collapse: collapse; 
+}
+.col1 {
+    text-align: center;
+}
+.col2 {
+    text-align: left;
+}
+span {
+    color: red;
+}
+footer {
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 3px;
+}
+#image {
+    width: 350px;
+    height: 400px;
+    margin:10px auto 10px auto;
+    display: none;
+    border: 2px solid #7c5295;
+    border-radius: 10px;
+}
+#text {
+    display: none;
+    margin: 20px auto 20px auto;
+    width: 75%;
+    background-color: #e0b0ff;
+    border: 1px solid #7c5295;
+    padding: 10px;
+}
+.buttons button{
+    border: 2px solid #7c5295;
+    border-radius: 5px;
+    background-color: #e0b0ff;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.buttons button:hover {
+    
+    background-color: #7c5295;
+    color: white;
+}
+#text1 {
+    display: none;
+    width: 160px;
+    margin: 20px;
+    background-color: #e0b0ff;
+    border: 1px solid #7c5295;
+    padding: 10px;
+}
