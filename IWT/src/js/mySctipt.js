@@ -1,27 +1,27 @@
 function loadData(data) {
     if (data === 'product1') {
-        document.getElementById("image").src = "/src/images/XS.jpg";
+        document.getElementById("image").src = "/IWT/src/images/XS.jpg";
         document.getElementById("image").style.display ='block';
         document.getElementById("text").innerHTML = "<span>Iphone XS</span> :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita blanditiis sit fugiat molestias voluptatem nostrum. Eaque mollitia, non, accusantium qui, illum sapiente quis molestias necessitatibus cumque labore aut tempore at.";
         document.getElementById("text").style.display ='block';
         document.getElementById("text1").style.display ='none';
     }
     else if (data === 'product2') {
-        document.getElementById("image").src = "/src/images/XSMax.jpg";
+        document.getElementById("image").src = "/IWT/src/images/XSMax.jpg";
         document.getElementById("image").style.display ='block';
         document.getElementById("text").innerHTML = "<span>Iphone XS Max</span> :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita blanditiis sit fugiat molestias voluptatem nostrum. Eaque mollitia, non, accusantium qui, illum sapiente quis molestias necessitatibus cumque labore aut tempore at.";
         document.getElementById("text").style.display ='block';
         document.getElementById("text1").style.display ='none';
     }
     else if (data === 'product3') {
-        document.getElementById("image").src = "/src/images/8plus.jpg";
+        document.getElementById("image").src = "/IWT/src/images/8plus.jpg";
         document.getElementById("image").style.display ='block';
         document.getElementById("text").innerHTML = "<span>Iphone 8 Plus</span> :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita blanditiis sit fugiat molestias voluptatem nostrum. Eaque mollitia, non, accusantium qui, illum sapiente quis molestias necessitatibus cumque labore aut tempore at.";
         document.getElementById("text").style.display ='block';
         document.getElementById("text1").style.display ='none';
     }
     else if (data === 'product4') {
-        document.getElementById("image").src = "/src/images/SE.png";
+        document.getElementById("image").src = "/IWT/src/images/SE.png";
         document.getElementById("image").style.display ='block';
         document.getElementById("text").innerHTML = "<span>Iphone SE</span> :- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita blanditiis sit fugiat molestias voluptatem nostrum. Eaque mollitia, non, accusantium qui, illum sapiente quis molestias necessitatibus cumque labore aut tempore at.";
         document.getElementById("text").style.display ='block';
