@@ -3,6 +3,7 @@
 <head>
     <title>My Shopping cart</title>
     <link rel="stylesheet" href="/IWT/src/styles/styles.css">
+    <link rel="stylesheet" href="/IWT/src/styles/formStyles.css">
     <script src="/IWT/src/js/mySctipt.js"></script>
 </head>
 <body>
@@ -20,35 +21,84 @@
             <li><a href="#">About</a></li>
         </ul>
     </nav>
-    <h2>Registration Form</h2>
+    <h2 id="formHeadder">Registration Form</h2>
     <div class="form">
-    <form action="">
+    <form action="" onsubmit="return checkPassword()">
         <div class="inputfield">
-            <label>First Name</label>
-            <input type="text" class="text" name="text">
+            <label>First Name</label><br>
+            <input type="text" class="text" name="text" required>
         </div>
         <div class="inputfield">
-            <label>Last Name</label>
-            <input type="text" class="text">
+            <label>Last Name</label><br>
+            <input type="text" class="text" required>
         </div>
         <div class="inputfield">
-            <label>Gender</label>
-            <div class="selection">
-                 <input type="radio" name="gender">Male
-                 <input type="radio" name="gender">Female
-             </div>
+            <label>Gender</label><br>
+            <input type="radio" name="gender" required>Male
+            <input type="radio" name="gender" required>Female
         </div>
         <div class="inputfield">
-            <label>Mobile Number</label>
-            <input type="tel" class="text">
+            <label>Mobile Number</label><br>
+            <input type="tel" class="text" pattern="[0-9]{10}" required>
         </div>
         <div class="inputfield">
-            <label>Email Address</label>
-            <input type="email" class="text">
+            <label>Email Address</label><br>
+            <input type="email" class="text" required>
         </div>
         <div class="inputfield">
-            <label>Address</label>
-            <textarea name="address" id="" cols="30" rows="10"></textarea>
+            <label>Address</label><br>
+            <textarea name="address" id="" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="inputfield">
+            <label for="">Choose your DOB</label><br>
+            <select name="" id="date" required></select>
+            <script>
+                (function() {
+                    let option = '<option>Choose a date</option>';
+    
+                    for (let i = 1; i <= 31; i++) {
+                         option += '<option>' + i + '</option>';
+                    }
+                    document.getElementById("date").innerHTML = option;
+                })();
+            </script>
+            <select name="" id="month" required>
+                <script>
+                    (function() {
+                        let option = '<option>Choose a Month</option>';
+                        for (let i = 1; i <= 12; i++) {
+                            option += '<option>' + i + '</option>';
+                        }
+                        document.getElementById("month").innerHTML = option;
+                    })();
+                </script>
+            </select>
+            <select name="" id="year" required>
+                <script>
+                    (function() {
+                        let option = '<option>Choose a Year</option>';
+                        for (let i = 1995; i <= 2005; i++) {
+                            option += '<option>' + i + '</option>';
+                        }
+                        document.getElementById("year").innerHTML = option;
+                    })();
+                </script>
+            </select>
+        </div>
+        <div class="inputfield">
+            <label>Password</label><br>
+            <input type="password" class="text" id="pswd1" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}">
+        </div>
+        <div class="inputfield">
+            <label>Re-enter Password</label><br>
+            <input type="password" id="pswd2" class="text" >
+        </div>
+        <div class="inputfield">
+            <input type="checkbox" id="checkbox" onclick="enableButton()">
+            <label>Accept privacy policy and terms</label>   
+        </div>
+        <div class="inputfield">
+            <input type="submit" id="btn" disabled> 
         </div>
     </form>
     </div>

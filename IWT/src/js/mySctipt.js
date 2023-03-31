@@ -68,3 +68,24 @@ function priceLower() {
     document.getElementById("text").style.display ='none';
     document.getElementById("image").style.display ='none';
 }
+function checkPassword() {
+    var pass1 = document.getElementById("pswd1");
+    var pass2 = document.getElementById("pswd2");
+
+    if (pass1 != pass2) {
+        alert ("Password Mismatch!");
+    }
+    else {
+        alert ("Success!");
+    }
+}
+function enableButton() {
+    var checkBox = document.getElementById("checkbox");
+
+    if (checkBox.checked == true) {
+        document.getElementById('btn').disabled = false;
+    }
+    else {
+        document.getElementById('btn').disabled = true;
+    }
+}
